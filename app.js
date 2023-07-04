@@ -4,6 +4,7 @@ import storageCampus from './routers/campus.js'
 dotenv.config();
 const appExpress = express();
 
+appExpress.use(express.json());
 appExpress.use("/campus", storageCampus);
 
 /* appExpress.get('/campus',(req,res)=>{
